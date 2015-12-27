@@ -1,0 +1,22 @@
+.navsec {
+  position: fixed;
+  z-index: 9;
+  left:0;
+  top:1rem;
+  width:100%;
+}
+
+.menuwrap {
+  @include clearfix();
+  width: calc(100% - 4rem);
+  background-color: rgba(#fff,.5);
+  float:right;
+}
+.graflogo {
+  float:left;
+  width:4rem;
+  display: block;
+}
+.menu--main {
+  float:right;
+}

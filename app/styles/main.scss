@@ -7,3 +7,7 @@
 @include foundation-everything();
 
 //Custom styles come here
+@import "layout";
+@import "component";
+@import "nav";
+@import "hero";

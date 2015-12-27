@@ -44,7 +44,7 @@
 // 1. Global
 // ---------
 
-$global-width: rem-calc(1200);
+$global-width: rem-calc(1400);
 $global-font-size: 100%;
 $global-lineheight: 1.5;
 $primary-color: #2199e8;
@@ -86,7 +86,7 @@ $breakpoint-classes: (small medium large);
 
 $grid-row-width: $global-width;
 $grid-column-count: 12;
-$grid-column-gutter: 30px;
+$grid-column-gutter: 50px;
 $grid-column-align-edge: true;
 $block-grid-max: 8;
 

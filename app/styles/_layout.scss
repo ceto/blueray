@@ -1,0 +1,11 @@
+.ps {
+  padding-top:6rem;
+  padding-bottom:6rem;
+}
+
+.row.container{
+  @include breakpoint(medium) {
+    padding-right: 7%;
+    padding-left: 7%;
+  }
+}
