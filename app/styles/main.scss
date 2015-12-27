@@ -1,0 +1,9 @@
+// bower:scss
+@import "bower_components/foundation-sites/scss/foundation.scss";
+// endbower
+
+// Global variables and styles overrides & print out to stylesheet
+@import "settings";
+@include foundation-everything();
+
+//Custom styles come here
