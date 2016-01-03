@@ -1,6 +1,6 @@
 .ps {
-  padding-top:6rem;
-  padding-bottom:6rem;
+  padding-top:8rem;
+  padding-bottom:8rem;
 }
 
 .row.container{
@@ -8,4 +8,19 @@
     padding-right: 7%;
     padding-left: 7%;
   }
+}
+
+.greatbg {
+  text-align: center;
+}
+.numbers {
+  background-color:$light-gray;
+}
+
+.solution {
+ background-color:$light-gray;
+}
+
+.contact {
+  background-color:$light-gray;
 }

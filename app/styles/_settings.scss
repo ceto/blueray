@@ -47,24 +47,24 @@
 $global-width: rem-calc(1400);
 $global-font-size: 100%;
 $global-lineheight: 1.5;
-$primary-color: #2199e8;
+$primary-color: #54c9e9;
 $secondary-color: #777;
 $success-color: #3adb76;
 $warning-color: #ffae00;
 $alert-color: #ec5840;
-$light-gray: #e6e6e6;
-$medium-gray: #cacaca;
-$dark-gray: #8a8a8a;
+$light-gray: #d5dee1;
+$medium-gray: #6e787c;
+$dark-gray: #3d4548;
 $black: #0a0a0a;
-$white: #fefefe;
+$white: #f2f7f9;
 $body-background: $white;
-$body-font-color: $black;
-$body-font-family: 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
+$body-font-color: $medium-gray;
+$body-font-family: 'BryantLG', 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
 $body-antialiased: true;
 $global-margin: 1rem;
 $global-padding: 1rem;
-$global-weight-normal: normal;
-$global-weight-bold: bold;
+$global-weight-normal: 400;
+$global-weight-bold: 500;
 $global-radius: 0;
 $global-text-direction: ltr;
 $rem-base: 16px;
@@ -79,7 +79,7 @@ $breakpoints: (
   xlarge: 1200px,
   xxlarge: 1440px,
 );
-$breakpoint-classes: (small medium large);
+$breakpoint-classes: (small medium large xlarge xxlarge);
 
 // 3. The Grid
 // -----------
@@ -115,7 +115,7 @@ $header-sizes: (
     'h6': 16,
   ),
 );
-$header-color: inherit;
+$header-color: $dark-gray;
 $header-lineheight: 1.4;
 $header-margin-bottom: 0.5rem;
 $header-text-rendering: optimizeLegibility;

@@ -1,3 +1,15 @@
+.graflogo {
+  overflow: hidden;
+  text-indent: 101%;
+  white-space: nowrap;
+  display: block;
+  background-image: url('../images/logo.png');
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  background-position: right top;
+  height:4rem;
+  width:4rem;
+}
 .navsec {
   position: fixed;
   z-index: 9;
@@ -9,14 +21,26 @@
 .menuwrap {
   @include clearfix();
   width: calc(100% - 4rem);
-  background-color: rgba(#fff,.5);
+  background-color: #fff;
   float:right;
+  box-shadow: 0 0 4px 0 rgba(#109dc5,.5);
+  height:2.875rem;
 }
 .graflogo {
   float:left;
-  width:4rem;
-  display: block;
 }
 .menu--main {
   float:right;
+}
+
+.menu {
+  padding:0 1rem;
+  > li:not(.menu-text) {
+    > a {
+      font-weight: $global-weight-bold;
+      font-size: 1rem;
+      line-height: 2.875;
+      padding:0  1rem;
+    }
+  }
 }
