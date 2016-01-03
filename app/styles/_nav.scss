@@ -1,4 +1,5 @@
 .graflogo {
+  position: absolute;
   overflow: hidden;
   text-indent: 101%;
   white-space: nowrap;
@@ -6,9 +7,13 @@
   background-image: url('../images/logo.png');
   background-repeat: no-repeat;
   background-size: auto 100%;
-  background-position: right top;
+  background-position: left top;
   height:4rem;
   width:4rem;
+  @include breakpoint(medium) {
+    width:13.5rem;
+    background-image: url('../images/logo_full.png');
+  }
 }
 .navsec {
   position: fixed;
@@ -23,8 +28,8 @@
   width: calc(100% - 4rem);
   background-color: #fff;
   float:right;
-  box-shadow: 0 0 4px 0 rgba(#109dc5,.5);
-  height:2.875rem;
+  box-shadow: 2px 2px 2px 0 rgba($dark-gray,.125);
+  height:2.9333rem;
 }
 .graflogo {
   float:left;
@@ -34,13 +39,18 @@
 }
 
 .menu {
-  padding:0 1rem;
+  @include breakpoint(large) {
+      padding:0 1rem;
+  }
   > li:not(.menu-text) {
     > a {
       font-weight: $global-weight-bold;
       font-size: 1rem;
-      line-height: 2.875;
+      line-height: 3.125;
       padding:0  1rem;
+      &.active {
+        color: $anchor-color-hover;
+      }
     }
   }
 }

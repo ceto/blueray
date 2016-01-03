@@ -86,7 +86,7 @@ $breakpoint-classes: (small medium large xlarge xxlarge);
 
 $grid-row-width: $global-width;
 $grid-column-count: 12;
-$grid-column-gutter: 50px;
+$grid-column-gutter: 40px;
 $grid-column-align-edge: true;
 $block-grid-max: 8;
 
@@ -107,21 +107,21 @@ $header-sizes: (
     'h6': 16,
   ),
   medium: (
-    'h1': 48,
-    'h2': 40,
-    'h3': 31,
+    'h1': 60,
+    'h2': 31,
+    'h3': 20,
     'h4': 25,
     'h5': 20,
     'h6': 16,
   ),
 );
 $header-color: $dark-gray;
-$header-lineheight: 1.4;
+$header-lineheight: 1.125;
 $header-margin-bottom: 0.5rem;
 $header-text-rendering: optimizeLegibility;
 $small-font-size: 80%;
 $header-small-font-color: $medium-gray;
-$paragraph-lineheight: 1.6;
+$paragraph-lineheight: 1.333;
 $paragraph-margin-bottom: 1rem;
 $paragraph-text-rendering: optimizeLegibility;
 $code-color: $black;

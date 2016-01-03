@@ -40,7 +40,11 @@
   top:50%;
   width: 100%;
   margin:0;
+  text-transform: uppercase;
   padding:0 1rem;
   color:#fff;
+  span {
+    font-weight: $global-weight-bold;
+  }
 }
 
