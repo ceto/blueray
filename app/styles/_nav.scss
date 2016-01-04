@@ -48,8 +48,9 @@
       font-size: 1rem;
       line-height: 3.125;
       padding:0  1rem;
-      &.active {
-        color: $anchor-color-hover;
+      color: $primary-color;
+      &.active, &:hover {
+       color: scale-color($primary-color, $lightness: -14%);
       }
     }
   }

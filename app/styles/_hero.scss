@@ -46,5 +46,30 @@
   span {
     font-weight: $global-weight-bold;
   }
+
+  a {
+    text-align: center;
+    width:2.5rem;
+    height:2.5rem;
+    margin-top: .215em;
+    margin-left: .05em;
+    border-radius: 50%;
+    background-color: rgba(#fff,1);
+    color:inherit;
+    font-style: normal;
+    position: absolute;
+    display: inline-block;
+    z-index: 0;
+    overflow: hidden;
+    &:hover, &:focus {
+      background-color: rgba(#fff,.5);
+    }
+  }
+  i {
+    font-style: normal;
+    display: inline-block;
+    //opacity: .25;
+
+  }
 }
 

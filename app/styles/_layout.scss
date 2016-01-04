@@ -11,6 +11,11 @@
   }
 }
 
+
+.main {
+  position: relative;
+  z-index: 2;
+}
 .greatbg {
   text-align: center;
 }
@@ -24,4 +29,5 @@
 
 .contact {
   background-color:$light-gray;
+  padding-bottom: 1rem;
 }
