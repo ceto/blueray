@@ -155,8 +155,15 @@ gulp.task('wiredep', () => {
     .pipe(gulp.dest('app'));
 });
 
+
 gulp.task('build', ['lint', 'html', 'images', 'fonts', 'extras'], () => {
   return gulp.src('dist/**/*').pipe($.size({title: 'build', gzip: true}));
+});
+
+// 'gulp deploy' -- pushes your dist folder to Github
+gulp.task('deploy', () => {
+  return gulp.src('dist/**/*')
+    .pipe($.ghPages());
 });
 
 gulp.task('default', ['clean'], () => {
