@@ -17,7 +17,13 @@
   display: block;
   border-radius:50%;
   margin:0 auto 1.5rem;
-  max-width: 11rem;
+  max-width: 12rem;
+  @include breakpoint(medium) {
+    max-width: 10rem;
+  }
+  @include breakpoint(large) {
+    max-width: 12rem;
+  }
 }
 
 .bullet__icon {
@@ -25,22 +31,43 @@
   display: block;
   border-radius:50%;
   margin:0 auto 1.5rem;
-  max-width: 11rem;
+  //max-width: 11rem;
   height: 0;
-  padding-bottom: 50%;
+  padding-bottom: 33.333%;
+  width: 33.333%;
   overflow: hidden;
   background-color: #fff;
   text-align: center;
+  @include breakpoint(medium) {
+    padding-bottom: 66.666%;
+    width: 66.666%;
+  }
+  @include breakpoint(large) {
+    padding-bottom: 0;
+    width: 11rem;
+    height: 11rem;
+  }
 
   .icon {
-    display: inline-block;
-    font-size: 5vw;
+    text-align: center;
+    display: block;
     line-height: 1;
-    height: 5vw;
     color:$primary-color;
     position: absolute;
     top:50%;
+    left:50%;
     transform:translate(-50%,-50%);
+
+    font-size: 5rem;
+    height:1em;
+    width:1em;
+    line-height: 1;
+    @include breakpoint(medium) {
+      font-size: 5rem;
+    }
+    @include breakpoint(large) {
+      font-size: 7rem;
+    }
   }
 }
 
@@ -99,16 +126,25 @@
   }
 
   .icon {
+    text-align: center;
     position: absolute;
     z-index: 1;
     top:50%;
     left:50%;
-    transform:translate(-55%,-58%);
+    transform:translate(-50%,-50%);
 
     display: block;
 
-    font-size: 6vw;
+    font-size: 3rem;
+    height:1em;
+    width:1em;
     line-height: 1;
+    @include breakpoint(medium) {
+      font-size: 3.25rem;
+    }
+    @include breakpoint(large) {
+      font-size: 5rem;
+    }
 
   }
 }
