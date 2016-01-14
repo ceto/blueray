@@ -57,6 +57,7 @@ $medium-gray: #6e787c;
 $dark-gray: #3d4548;
 $black: #0a0a0a;
 $white: #f2f7f9;
+$white2: #e4edf0;
 $body-background: $white;
 $body-font-color: $medium-gray;
 $body-font-family: 'BryantLG', 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
@@ -74,7 +75,7 @@ $rem-base: 16px;
 
 $breakpoints: (
   small: 0,
-  medium: 640px,
+  medium: 740px,
   large: 1024px,
   xlarge: 1200px,
   xxlarge: 1440px,

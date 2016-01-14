@@ -1,7 +1,11 @@
 .ps {
-  padding-top:7rem;
-  padding-bottom:7rem;
+  padding-top:5rem;
+  padding-bottom:5rem;
   overflow: hidden;
+  @include breakpoint(medium) {
+    padding-top:7rem;
+    padding-bottom:7rem;
+  }
 }
 
 .row.container{
@@ -24,7 +28,7 @@
 }
 
 .solution {
- background-color:$light-gray;
+ background-color:$white2;
 }
 
 .contact {

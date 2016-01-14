@@ -8,47 +8,84 @@
   background-repeat: no-repeat;
   background-size: auto 100%;
   background-position: left top;
-  height:4rem;
-  width:4rem;
+  height:2.875rem;
+  width:2.875rem;
   @include breakpoint(medium) {
     width:13.5rem;
+    height:4rem;
     background-image: url('../images/logo_full.png');
   }
 }
 .navsec {
-  position: fixed;
+  position: absolute;
   z-index: 9;
   left:0;
-  top:1rem;
+  top:1.25rem;
   width:100%;
+  @include breakpoint(medium) {
+    position: fixed;
+    top:1rem;
+  }
 }
 
 .menuwrap {
   @include clearfix();
   width: calc(100% - 4rem);
-  background-color: #fff;
+
   float:right;
-  box-shadow: 2px 2px 2px 0 rgba($dark-gray,.125);
-  height:2.9333rem;
+
+  //   background-color: #fff;
+  //   box-shadow: 2px 2px 2px 0 rgba($dark-gray,.125);
+  //   height:2.9333rem;
+
+  @include breakpoint(medium) {
+    background-color: #fff;
+    box-shadow: 2px 2px 2px 0 rgba($dark-gray,.125);
+    height:2.9333rem;
+  }
 }
 .graflogo {
   float:left;
+  position: fixed;
+  // @include breakpoint(medium) {
+  //   position: relative;
+  // }
 }
 .menu--main {
-  float:right;
+  //float:right;
+  //margin-left: 1rem;
+  @include breakpoint(medium) {
+    float:right;
+    //margin-left: 0;
+  }
 }
 
 .menu {
+  text-align: center;
   @include breakpoint(large) {
       padding:0 1rem;
   }
+  > li {
+
+  }
   > li:not(.menu-text) {
+    display:inline-block;
+
+    @include breakpoint(medium) {
+      //display: table-cell;
+    }
     > a {
       font-weight: $global-weight-bold;
       font-size: 1rem;
-      line-height: 3.125;
-      padding:0  1rem;
+      line-height: 1;
+      padding:0 .666rem;
+      margin-bottom: .333rem;
       color: $primary-color;
+      @include breakpoint(medium) {
+        line-height: 3.125;
+         padding:0 1rem;
+         margin:0;
+      }
       &.active, &:hover {
        color: scale-color($primary-color, $lightness: -14%);
       }
