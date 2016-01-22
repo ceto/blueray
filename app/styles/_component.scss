@@ -211,3 +211,34 @@
     }
   }
 }
+
+
+
+.companydetails {
+  h3 {
+    font-size: 1.333rem;
+    text-transform: uppercase;
+    font-weight: $global-weight-bold;
+    @include breakpoint(medium) {
+      text-align: right;
+      width:50%;
+      float:left;
+      clear:both;
+      padding-right: $grid-column-gutter/2;
+    }
+  }
+  p {
+    font-family: 'Roboto', 'BryantLG', sans-serif;
+    font-weight: 300;
+    margin-bottom: 2rem;
+    @include breakpoint(medium) {
+      width:50%;
+      float:right;
+      clear:right;
+      padding-left: $grid-column-gutter/2;
+    }
+    strong {
+      font-weight: 700;
+    }
+  }
+}
