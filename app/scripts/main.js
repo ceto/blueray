@@ -39,6 +39,11 @@ $(document).ready( function() {
 
 
 
+  $('#cd-toggle').click(function() {
+    $('#companydetails').toggleClass('is_active');
+  }
+
+  );
 
 
 

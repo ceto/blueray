@@ -88,8 +88,6 @@
 .bullet__text {
   max-width: 14rem;
   margin:0 auto;
-  font-family: 'Roboto', 'BryantLG', sans-serif;
-  font-weight: 300;
 }
 
 .fact {
@@ -153,6 +151,8 @@
 
 .trickylist {
   @include clearfix();
+  font-family: $speci-font-family;
+  font-weight: $global-weight-normal;
   list-style-type: none;
   margin: 4rem auto 4rem;
   max-width: 40em;
@@ -215,8 +215,12 @@
 
 
 .companydetails {
+  &.is_active {
+    display: block;
+  }
   h3 {
-    font-size: 1.333rem;
+    //font-size: 1.75rem;
+    line-height: 1.5;
     text-transform: uppercase;
     font-weight: $global-weight-bold;
     @include breakpoint(medium) {
@@ -228,8 +232,6 @@
     }
   }
   p {
-    font-family: 'Roboto', 'BryantLG', sans-serif;
-    font-weight: 300;
     margin-bottom: 2rem;
     @include breakpoint(medium) {
       width:50%;
@@ -237,8 +239,13 @@
       clear:right;
       padding-left: $grid-column-gutter/2;
     }
-    strong {
-      font-weight: 700;
-    }
+
   }
+}
+
+.tothetop{
+  display: block;
+  text-align:center;
+  font-size:3rem;
+  margin:0 auto 2rem;
 }

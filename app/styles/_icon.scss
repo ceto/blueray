@@ -1,9 +1,9 @@
 @font-face {
     font-family: 'blueray';
     src:
-        url('../fonts/blueray.ttf?orxqpd') format('truetype'),
-        url('../fonts/blueray.woff?orxqpd') format('woff'),
-        url('../fonts/blueray.svg?orxqpd#blueray') format('svg');
+        url('../fonts/blueray.ttf?mw5gvg') format('truetype'),
+        url('../fonts/blueray.woff?mw5gvg') format('woff'),
+        url('../fonts/blueray.svg?mw5gvg#blueray') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -24,6 +24,9 @@
 }
 
 .icon--arrow:before {
+    content: "\e90a";
+}
+.icon--arrowup:before {
     content: "\e900";
 }
 .icon--drop:before {
