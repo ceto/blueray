@@ -3,7 +3,7 @@
   text-align: center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: left top;
+  background-position: center center;
   height: 27.5rem;
   max-height: 60em;
   overflow: hidden;
@@ -14,23 +14,37 @@
 
 
 .hero--welove {
+  background-size: auto 100%;
+  background-position: 80% bottom;
   background-image: url(../images/welove.jpg);
-      background-attachment: fixed;
+  @include breakpoint(medium) {
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+  }
 }
 
 .hero--pair {
-  background-image: url(../images/pair.jpg);
+  background-image: url(../images/pair_small.jpg);
   background-repeat: repeat-x;
   background-size: auto 100%;
+  background-position: left center;
   height:7.5rem;
   max-height: 30em;
   @include breakpoint(medium) {
+    background-image: url(../images/pair.jpg);
     height: 40vh;
   }
 }
 .hero--easy {
   background-image: url(../images/easy.jpg);
-  background-attachment: fixed;
+  background-size: auto 100%;
+  background-position: left center;
+
+  @include breakpoint(medium) {
+    background-attachment: fixed;
+    background-size: cover;
+  }
 }
 
 .hero__image {
