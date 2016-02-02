@@ -40,10 +40,16 @@ $(document).ready( function() {
 
 
   $('#cd-toggle').click(function() {
-    $('#companydetails').toggleClass('is_active');
-  }
+      $('#companydetails').toggleClass('is_active');
+  });
 
-  );
+  $('.menutoggle').click(function() {
+      $('.menuwrap').toggleClass('is_visible');
+  });
+
+  $('.menu--main a').click(function(e) {
+    $('.menuwrap').removeClass('is_visible');
+  });
 
 
 
