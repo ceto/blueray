@@ -369,7 +369,7 @@ $mediaobject-image-width-stacked: 100%;
 $menu-margin: 0;
 $menu-margin-nested: 1rem;
 $menu-item-padding: 0.7rem 1rem;
-$menu-icon-spacing: 0.25rem;
+$menu-icon-spacing: .25rem;
 $menu-expand-max: 6;
 
 // 23. Off-canvas
@@ -521,7 +521,7 @@ $titlebar-padding: 0.5rem;
 $titlebar-text-font-weight: bold;
 $titlebar-icon-color: $primary-color;
 $titlebar-icon-color-hover: scale-color($titlebar-icon-color, $lightness: -14%);
-$titlebar-icon-spacing: 0.25rem;
+$titlebar-icon-spacing: 1.25rem;
 
 // 34. Tooltip
 // -----------

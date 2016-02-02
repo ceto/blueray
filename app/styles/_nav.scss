@@ -76,11 +76,22 @@
 }
 .graflogo {
   float:left;
-  position: fixed;
-  z-index: 3;
+  position: absolute;
+  z-index: 1;
   // @include breakpoint(medium) {
   //   position: relative;
   // }
+}
+
+.graflogo--inmenu {
+  float:none;
+  position: fixed;
+  left:1.25rem;
+  top:1.25rem;
+  z-index: 3;
+  @include breakpoint(medium) {
+    display: none;
+  }
 }
 .menu-icon {
   position: fixed;
@@ -88,6 +99,7 @@
   right:$grid-column-gutter/2;
   top:1.5rem;
   z-index: 3;
+  height:2rem;
   &:focus {
     outline: none;
   }
